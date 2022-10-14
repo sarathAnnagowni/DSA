@@ -2,10 +2,9 @@ package com.CCI;
 
 public class StringCompression {
     public static void main(String[] args){
-        System.out.println(isUrlify("abbbcccdddd"));
-
+        System.out.println(compressString("abbbcccdddd"));
     }
-    public static String isUrlify(String word){
+    public static String compressString(String word){
 
         int count=1;
         StringBuilder sb=new StringBuilder();
