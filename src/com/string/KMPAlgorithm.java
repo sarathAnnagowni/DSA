@@ -3,13 +3,13 @@ package com.string;
 public class KMPAlgorithm {
 
     public static void main(String[] args){
-        String str = "abcxabcdabcdabcy";
-        String subString = "acdbcabcadbac";
-        print(computeTemporaryArray(subString.toCharArray()));
+        String str = "abcxabcabcxabcy";
+        String subString = "abc";
+        //print(computeTemporaryArray(subString.toCharArray()));
 
-       /* KMPAlgorithm ss = new KMPAlgorithm();
+        KMPAlgorithm ss = new KMPAlgorithm();
         boolean result = ss.KMP(str.toCharArray(), subString.toCharArray());
-        System.out.print(result);*/
+        System.out.print(result);
     }
 
 
@@ -85,7 +85,6 @@ public class KMPAlgorithm {
      * KMP algorithm of pattern matching.
      */
     public boolean KMP(char []text, char []pattern){
-
         int lps[] = computeTemporaryArray(pattern);
         int i=0;
         int j=0;

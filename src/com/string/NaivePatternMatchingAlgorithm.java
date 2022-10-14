@@ -26,7 +26,6 @@ public class NaivePatternMatchingAlgorithm {
                     return true;
                 }
             }
-
         }
         return false;
 
