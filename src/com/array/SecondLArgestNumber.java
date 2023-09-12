@@ -2,13 +2,13 @@ package com.array;
 
 public class SecondLArgestNumber {
     public static void main(String args[]){
-        int[] a={10,5,9,-6,-9,15,14,11};
+        int[] a={-8,-6,-9};
         System.out.println(maxElement(a));
         System.out.println(secondMaxElement1(a));
     }
     public static int secondMaxElement1(int[] array){
 
-        int largest=0;int secondLargest=-1;
+        int largest=Integer.MIN_VALUE;int secondLargest=Integer.MIN_VALUE-1;
         for(int i=0;i<array.length;i++){
             if(array[i]>largest){
                 secondLargest=largest;

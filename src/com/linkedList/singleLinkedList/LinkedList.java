@@ -1,9 +1,10 @@
 package com.linkedList.singleLinkedList;
 
 public class LinkedList {
-    Node head;
-    Node tail;
+    public Node head;
+    public Node tail;
     private int size;
+
 
     public Node createLinkedList(int nodeValue){
         head=new Node();

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class UniqueStringTest {
     public static void main(String[] args){
-        System.out.println(isUnique2("abcdefghkl mnopqi"));
+        System.out.println(isUnique("rey"));
 
     }
      // O(n2) This is Sliding window Approach
@@ -21,7 +21,7 @@ public class UniqueStringTest {
     }
 
     // O(NlogN) This is
-    public static boolean isUnique2(String word){
+    public static boolean isUniquHelpOfSort(String word){
         char[] wordChars=word.toCharArray();
         Arrays.sort(wordChars);
         for(int i=0 ; i<wordChars.length-1; i++){

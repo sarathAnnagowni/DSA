@@ -5,9 +5,11 @@ import java.util.HashMap;
 
 public class FibonacciTest {
     public static void main(String[] s){
-        HashMap<Integer,Integer> map=new HashMap<>();
+      /*  HashMap<Integer,Integer> map=new HashMap<>();
         //System.out.println(fibonacciTopDown(6,map));
-        System.out.println(fibonacciBottomUp(6));
+        System.out.println(fibonacciBottomUp(6));*/
+        String url="http://10.128.14.120:8143/nghp-content-reference-ui/autocomplete.jsp";
+        System.out.println(url.split("://")[1].split("/")[0]);
     }
 
     public static int fibonacciTopDown(int n, HashMap<Integer,Integer> map){

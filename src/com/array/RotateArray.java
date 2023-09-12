@@ -6,11 +6,11 @@ public class RotateArray {
         print(a);
         rotateArray(a,0,3);
         print(a);
-        rotateArray(a,4,a.length-1);
+       /* rotateArray(a,4,a.length-1);
         print(a);
         rotateArray(a,0,a.length-1);
         print(a);
-
+*/
     }
 
     private static void print(int[] a) {
